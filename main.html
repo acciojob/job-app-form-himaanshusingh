@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="POST">
+      <fieldset>
+        <legend>Job Application Form</legend>
+        <div class="name-div">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="email-div">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="gender-div">
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" required />
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" required />
+        </div>
+        <div class="laptop-div">
+          <label for="laptop">Laptop Brands</label>
+          <select name="laptop-brand" id="laptop">
+            <option value="select" disabled selected>Select any one</option>
+            <option value="apple">Apple</option>
+            <option value="asus">Asus</option>
+            <option value="hp">HP</option>
+          </select>
+        </div>
+        <div class="age-div">
+          <label for="age">Age</label>
+          <input type="number" id="age" required />
+        </div>
+        <div class="dob-div">
+          <label for="dob">Age</label>
+          <input type="date" id="dob" required />
+        </div>
+        <div class="password-div">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+        </div>
+        <div class="portfolio-div">
+          <label for="portfolio">Portfolio URL</label>
+          <input type="text" id="portfolio" />
+        </div>
+        <input type="button" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
 </html>
